@@ -6,6 +6,10 @@
         android:label="google_maps_in_flutter"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDXMQE17ACmeABDg6iXS50xkiZADFMwT6I" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -21,9 +25,7 @@
               android:resource="@style/NormalTheme"
               />
             <!-- Add Google Maps API key here -->
-            <meta-data
-                android:name="com.google.android.geo.API_KEY"
-                android:value="AIzaSyDIAz9-C4I79RE_z7ACrR7aEhA8OJStJX0" />
+
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
